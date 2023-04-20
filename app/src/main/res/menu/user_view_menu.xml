@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuVideo"
+        android:icon="@drawable/ic_video"
+        android:title="video"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menuPhone"
+        android:icon="@drawable/ic_phone"
+        android:title="Phone"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menuContact"
+        android:title="View contact" />
+    <item
+        android:id="@+id/menuMedia"
+        android:title="Media, link, and docs" />
+    <item
+        android:id="@+id/menuSearch"
+        android:title="Search" />
+    <item
+        android:id="@+id/menuMute"
+        android:title="Mute notification" />
+    <item
+        android:id="@+id/menuDisappearing"
+        android:title="Disappearing messages" />
+    <item
+        android:id="@+id/menuWallpaper"
+        android:title="View contact" />
+    <item
+        android:id="@+id/menuMore"
+        android:title="More" >
+        <menu >
+            <item android:id="@+id/menuReport"
+                android:title="Report"/>
+            <item android:id="@+id/menuBlock"
+                android:title="Block"/>
+            <item android:id="@+id/menuClear"
+                android:title="Clear"/>
+            <item android:id="@+id/menuExport"
+                android:title="Export chat"/>
+            <item android:id="@+id/menuShortcut"
+                android:title="Add shortcut"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,95 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    namespace 'com.sandhya.whatsapp'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.sandhya.whatsapp"
+        minSdk 22
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-database-ktx:20.1.0'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.squareup.picasso:picasso:2.8'
+    //blur view
+    implementation 'com.github.Dimezis:BlurView:version-2.0.3'
+    implementation 'fr.tvbarthel.blurdialogfragment:lib:2.2.0'
+    //search
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.5'
+    implementation 'com.hendraanggrian.appcompat:socialview:0.3-rc1'
+
+    //tag library
+    implementation "com.hootsuite.android:nachos:1.1.1"
+
+    // Dependency FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:6.2.1'
+
+    // Dependency for Firebase REaltime Database
+    implementation 'com.google.firebase:firebase-database:19.3.1'
+//    implementation 'com.github.User:Repo:Tag'
+
+
+//    implementation 'com.google.android.exoplayer:exoplayer-core:2.11.4'
+//    implementation 'com.google.android.exoplayer:exoplayer-ui:2.11.4'
+
+    // dependency for exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.8.2'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.8.2'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.8.2'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.8.2'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.8.2'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.8.2'
+
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    // Import the BoM for the Firebase platform
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-storage:20.1.0'
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'
+    //noinspection GradleDependency,GradleDependency
+    implementation 'com.google.firebase:firebase-firestore:24.1.0'
+
+    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.0.0'
+//    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:3.5.0"
+
+    implementation 'com.twitter.sdk.android:twitter-core:3.3.0'
+
+    //country code
+    implementation 'com.hbb20:ccp:2.5.4'
+}

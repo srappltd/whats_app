@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <ripple android:color="@color/click"
+            android:effectColor="@color/click"/>
+        <shape>
+            <solid android:color="@color/click"/>
+        </shape>
+    </item>
+
+</selector>
